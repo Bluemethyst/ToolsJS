@@ -28,9 +28,22 @@ StartupEvents.registry("item", (event) => {
     event.create("fishing_rod", "fishing_rod");
 });
 ```
+You can also use built in textures to help create your tools quickly. This one will make the paxel head a different colour.
+```js
+StartupEvents.registry("item", (event) => {
+    event
+        .create("test_paxel", "paxel")
+        .texture("layer0", "toolsjs:item/paxel_handle")
+        .texture("layer1", "toolsjs:item/paxel")
+        .color(1, 0x74c7ec);
+});
+```
+![img.png](.github/assets/img.png)
 
 ### To Do
 Fix Bow, Crossbow, and Fishing Rod textures in different states.
 
 ## Credits
 All paxel code and tagging code from [Cucumber Library by BlakeBr0 under MIT license](https://github.com/BlakeBr0/Cucumber)
+
+All built in textures provided by [FooterManDev](https://github.com/FooterManDev)

@@ -6,13 +6,14 @@ import net.minecraft.core.Holder
 import net.minecraft.resources.ResourceLocation
 import net.minecraft.world.item.AnimalArmorItem
 import net.minecraft.world.item.ArmorMaterial
+import net.minecraft.world.item.ArmorMaterials
 import net.minecraft.world.item.Item
 
 class HorseArmorBuilder(i: ResourceLocation?) : ItemBuilder(i) {
-    private var material: Holder<ArmorMaterial>? = null
+    private var material: Holder<ArmorMaterial> = ArmorMaterials.GOLD
     private var texture: ResourceLocation? = null
 
-    @Info(value = "The material you want to use for the horse armor")
+    @Info(value = "The material you want to use for the horse armor. Defaults to Gold")
     fun material(material: Holder<ArmorMaterial>): HorseArmorBuilder {
         this.material = material
         return this
@@ -27,7 +28,6 @@ class HorseArmorBuilder(i: ResourceLocation?) : ItemBuilder(i) {
     override fun createObject(): Item {
         val item = object : AnimalArmorItem(material, AnimalArmorItem.BodyType.EQUESTRIAN, false, createItemProperties()) {
             override fun getTexture(): ResourceLocation {
-
                 return this@HorseArmorBuilder.texture ?: super.getTexture()
             }
         }

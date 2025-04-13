@@ -6,13 +6,14 @@ import net.minecraft.core.Holder
 import net.minecraft.resources.ResourceLocation
 import net.minecraft.world.item.AnimalArmorItem
 import net.minecraft.world.item.ArmorMaterial
+import net.minecraft.world.item.ArmorMaterials
 import net.minecraft.world.item.Item
 
 class WolfArmorBuilder(i: ResourceLocation?) : ItemBuilder(i) {
     private var texture: ResourceLocation? = null
-    private var material: Holder<ArmorMaterial>? = null
+    private var material: Holder<ArmorMaterial> = ArmorMaterials.GOLD
 
-    @Info(value = "The material you want to use for the wolf armor")
+    @Info(value = "The material you want to use for the wolf armor. Defaults to Gold")
     fun material(material: Holder<ArmorMaterial>): WolfArmorBuilder {
         this.material = material
         return this

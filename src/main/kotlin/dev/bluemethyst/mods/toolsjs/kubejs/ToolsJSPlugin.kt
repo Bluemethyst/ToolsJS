@@ -19,7 +19,7 @@ class ToolsJSPlugin : KubeJSPlugin {
             if (ModList.get().isLoaded("exdeorum")) {
                 reg.add("exdeorum:hammer", HammerItemBuilder::class.java, ::HammerItemBuilder)
                 reg.add("exdeorum:crook", CrookItemBuilder::class.java, ::CrookItemBuilder)
-                reg.add("exdeorum:watering_can", WateringcanItemBuilder::class.java, ::WateringcanItemBuilder)
+                reg.add("exdeorum:watering_can", WateringCanItemBuilder::class.java, ::WateringCanItemBuilder)
                 reg.add("exdeorum:mesh", MeshItemBuilder::class.java, ::MeshItemBuilder)
             }
             reg.add("paxel", PaxelItemBuilder::class.java, ::PaxelItemBuilder)
