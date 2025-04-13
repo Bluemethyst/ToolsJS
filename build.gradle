@@ -158,9 +158,9 @@ configurations {
 dependencies {
     implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk8"
 
-    implementation 'thedarkcolour:kotlinforforge-neoforge:5.6.0'
+    implementation "thedarkcolour:kotlinforforge-neoforge:$kotlin_for_forge_version"
 
-    implementation "maven.modrinth:ex-deorum:3.6"
+    implementation "maven.modrinth:ex-deorum:$exdeorum_version"
 
     implementation "curse.maven:probejs-585406:5820894"
 
