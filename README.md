@@ -43,6 +43,8 @@ StartupEvents.registry("item", (event) => {
 ### To Do
 Fix Bow, Crossbow, and Fishing Rod textures in different states.
 
+Wolf armor cannot properly be done without mixin due to mojang hard coding it.
+
 ## Credits
 All paxel code and tagging code from [Cucumber Library by BlakeBr0 under MIT license](https://github.com/BlakeBr0/Cucumber)
 
