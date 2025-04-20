@@ -20,9 +20,6 @@ StartupEvents.registry("item", (event) => {
     event.create("test_paxel", "paxel");
 
     // Below this point are currently have broken textures
-    event.create("test_horse_armor", "horse_armor").material("gold");
-    //.armorTexture("minecraft:item/diamond_horse_armor");
-    event.create("test_wolf_armor", "wolf_armor").material("gold");
     event.create("test_bow", "bow");
     event.create("test_crossbow", "crossbow");
     event.create("fishing_rod", "fishing_rod");
@@ -40,6 +37,19 @@ StartupEvents.registry("item", (event) => {
 ```
 ![img.png](.github/assets/img.png)
 
+An example of horse armor with the diamond item texture and armor texture.
+```js
+StartupEvents.registry("item", (event) => {
+    event
+        .create("test_horse_armor", "horse_armor")
+        .material("diamond")
+        .armorTexture(
+            "minecraft:textures/entity/horse/armor/horse_armor_diamond"
+        )
+        .texture("minecraft:item/diamond_horse_armor");
+});
+
+```
 ### To Do
 Fix Bow, Crossbow, and Fishing Rod textures in different states.
 

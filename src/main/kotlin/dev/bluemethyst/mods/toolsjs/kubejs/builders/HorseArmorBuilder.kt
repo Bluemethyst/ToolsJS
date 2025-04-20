@@ -21,7 +21,7 @@ class HorseArmorBuilder(i: ResourceLocation?) : ItemBuilder(i) {
 
     @Info(value = "The texture you want to use for the horse armor")
     fun armorTexture(texture: ResourceLocation): HorseArmorBuilder {
-        this.texture = texture
+        this.texture = ResourceLocation.parse("$texture.png")
         return this
     }
 
