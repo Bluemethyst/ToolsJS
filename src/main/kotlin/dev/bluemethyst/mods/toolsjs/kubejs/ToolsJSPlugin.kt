@@ -26,8 +26,8 @@ class ToolsJSPlugin : KubeJSPlugin {
             reg.add("horse_armor", HorseArmorBuilder::class.java, ::HorseArmorBuilder)
             reg.add("shield", ShieldItemBuilder::class.java, ::ShieldItemBuilder)
             reg.add("brush", BrushItemBuilder::class.java, ::BrushItemBuilder)
-            reg.add("fishing_rod", FishingRodItemBuilder::class.java, ::FishingRodItemBuilder)
 
+            reg.add("fishing_rod", FishingRodItemBuilder::class.java, ::FishingRodItemBuilder)
             reg.add("bow", BowItemBuilder::class.java, ::BowItemBuilder)
             reg.add("crossbow", CrossbowItemBuilder::class.java, ::CrossbowItemBuilder)
         }
