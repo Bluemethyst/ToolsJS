@@ -1,3 +1,7 @@
+![CurseForge Downloads](https://img.shields.io/curseforge/dt/1241061?style=for-the-badge&logo=curseforge&color=ff784d)
+![Modrinth Downloads](https://img.shields.io/modrinth/dt/toolsjs?style=for-the-badge&logo=modrinth&color=17b85a)
+
+
 # ToolsJS
 A [KubeJS](https://kubejs.com) addon for creating tools! Any type of tools! Includes all tools and features of [CucumberJS](https://git.bluemethyst.dev/CucumberJS), PaxelJS and lots of new ones!
 
