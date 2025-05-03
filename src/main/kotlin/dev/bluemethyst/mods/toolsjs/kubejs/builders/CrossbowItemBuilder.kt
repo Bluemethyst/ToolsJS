@@ -5,8 +5,12 @@ import net.minecraft.resources.ResourceLocation
 import net.minecraft.world.item.CrossbowItem
 import net.minecraft.world.item.Item
 
+val CROSSBOWS = mutableListOf<CrossbowItem>()
+
 class CrossbowItemBuilder(i: ResourceLocation?) : ItemBuilder(i) {
     override fun createObject(): Item {
-        return CrossbowItem(createItemProperties())
+        val crossbow = CrossbowItem(createItemProperties())
+        CROSSBOWS.add(crossbow)
+        return crossbow
     }
 }

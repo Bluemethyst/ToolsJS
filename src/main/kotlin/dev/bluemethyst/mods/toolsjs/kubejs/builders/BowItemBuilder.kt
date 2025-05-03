@@ -5,8 +5,12 @@ import net.minecraft.resources.ResourceLocation
 import net.minecraft.world.item.BowItem
 import net.minecraft.world.item.Item
 
+val BOWS = mutableListOf<BowItem>()
+
 class BowItemBuilder(i: ResourceLocation?) : ItemBuilder(i) {
     override fun createObject(): Item {
-        return BowItem(createItemProperties())
+        val bow = BowItem(createItemProperties())
+        BOWS.add(bow)
+        return bow
     }
 }

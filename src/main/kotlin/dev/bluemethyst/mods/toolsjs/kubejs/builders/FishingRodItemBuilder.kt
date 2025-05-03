@@ -5,8 +5,12 @@ import net.minecraft.resources.ResourceLocation
 import net.minecraft.world.item.FishingRodItem
 import net.minecraft.world.item.Item
 
+val FISHING_RODS = mutableListOf<FishingRodItem>()
+
 class FishingRodItemBuilder(i: ResourceLocation?) : ItemBuilder(i) {
     override fun createObject(): Item {
-        return FishingRodItem(createItemProperties())
+        val fishingRod = FishingRodItem(createItemProperties())
+        FISHING_RODS.add(fishingRod)
+        return fishingRod
     }
 }
