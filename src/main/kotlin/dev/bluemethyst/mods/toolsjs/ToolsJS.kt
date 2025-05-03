@@ -34,7 +34,7 @@ class ToolsJS(modBus: IEventBus) {
         fun onClientSetup(event: FMLClientSetupEvent?) {
             for (bow in BOWS) {
                 LOGGER.info("Registering bow properties for $bow")
-                ModItemProperties.makeCustomBows(bow)
+                ModItemProperties.makeCustomBows(bow.key)
             }
             for (crossbow in CROSSBOWS) {
                 LOGGER.info("Registering crossbow properties for $crossbow")

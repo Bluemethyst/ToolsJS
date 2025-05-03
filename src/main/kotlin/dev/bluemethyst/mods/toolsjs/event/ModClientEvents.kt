@@ -12,7 +12,8 @@ import net.neoforged.neoforge.client.event.ComputeFovModifierEvent
 object ModClientEvents {
     @SubscribeEvent
     fun onComputeFovModifierEvent(event: ComputeFovModifierEvent) {
-        if (event.getPlayer().isUsingItem() && BOWS.contains(event.getPlayer().getUseItem().getItem())) {
+        val item = event.getPlayer().getUseItem().getItem()
+        if (event.getPlayer().isUsingItem() && BOWS[item] == true) {
             var fovModifier = 1f
             val ticksUsingItem = event.getPlayer().getTicksUsingItem()
             var deltaTicks = ticksUsingItem.toFloat() / 20f

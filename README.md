@@ -14,7 +14,7 @@ StartupEvents.registry("item", (event) => {
     event.create("test_hammer", "exdeorum:hammer").tag("exdeorum:hammers");
     event.create("test_crook", "exdeorum:crook").tag("exdeorum:crooks");
     event.create("test_mesh", "exdeorum:mesh");
-    event.create("test_wateringcan", "exdeorum:watering_can").capacity(3000); //capacity not working
+    event.create("test_wateringcan", "exdeorum:watering_can").capacity(3000);
     event.create("test_brush", "brush");
     event.create("test_shield", "shield");
     event.create("test_paxel", "paxel");
