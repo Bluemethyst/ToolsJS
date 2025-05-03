@@ -18,14 +18,13 @@ StartupEvents.registry("item", (event) => {
     event.create("test_brush", "brush");
     event.create("test_shield", "shield");
     event.create("test_paxel", "paxel");
-
-    // Below this point are currently have broken textures
     event.create("test_bow", "bow");
     event.create("test_crossbow", "crossbow");
     event.create("fishing_rod", "fishing_rod");
 });
 ```
 You can also use built in textures to help create your tools quickly. This one will make the paxel head a different colour.
+View the built-in textures [here](/src/main/resources/assets/toolsjs/textures/item)
 ```js
 StartupEvents.registry("item", (event) => {
     event
@@ -35,7 +34,7 @@ StartupEvents.registry("item", (event) => {
         .color(1, 0x74c7ec);
 });
 ```
-![img.png](.github/assets/img.png)
+![img.png](.github/assets/custom_paxel.png)
 
 An example of horse armor with the diamond item texture and armor texture.
 ```js
@@ -50,9 +49,20 @@ StartupEvents.registry("item", (event) => {
 });
 
 ```
-### To Do
-Fix Bow, Crossbow, and Fishing Rod textures in different states.
 
+Here is an example of a custom crossbow with a custom texture. 
+You need to name the item you are creating the same as the texture and model file names as shown below. 
+There are also no built-in texture and model files for this reason, and you will have to copy your own from the vanilla versions. 
+You can find them easily at [mcasset.cloud](https://mcasset.cloud/).
+```js
+StartupEvents.registry("item", (event) => {
+    event.create("crossbow", "crossbow");
+});
+```
+![img.png](.github/assets/crossbow_models.png)![img_1.png](.github/assets/crossbow_textures.png)
+
+
+### Future
 Wolf armor cannot properly be done without mixin due to mojang hard coding it.
 
 ## Credits
