@@ -162,7 +162,7 @@ dependencies {
 
     implementation "maven.modrinth:ex-deorum:$exdeorum_version"
 
-    implementation "curse.maven:probejs-585406:5820894"
+    implementation "curse.maven:probejs-585406:7105159"
 
     api("dev.latvian.mods:kubejs-neoforge:$kubejs_version")
     interfaceInjectionData("dev.latvian.mods:kubejs-neoforge:$kubejs_version")
