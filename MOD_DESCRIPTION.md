@@ -3,7 +3,7 @@
 
 
 # ToolsJS
-A [KubeJS](https://kubejs.com) addon for creating tools! Any type of tools! Includes all tools and features of [CucumberJS](https://git.bluemethyst.dev/CucumberJS), PaxelJS and lots of new ones!
+A [KubeJS](https://kubejs.com) addon for creating tools! Any type of tools! Includes most tools and features of [CucumberJS](https://git.bluemethyst.dev/CucumberJS), PaxelJS and lots of new ones!
 
 ## Dependencies
 [Kotlin for Forge](https://modrinth.com/mod/kotlin-for-forge)
